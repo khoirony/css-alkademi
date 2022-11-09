@@ -135,19 +135,26 @@ a:link, a:visited {
 }
 
 .arrival{
+    overflow: auto;
+    scroll-direction: horizontal;
     display: flex;
-    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
-.arrival .content{
+.container .arrival::-webkit-scrollbar {
+    display: none;
+  }
+
+#new-arrival .container .arrival .content{
     padding: 0px;
     margin: 0px 15px;
-    width: calc((100%/3) - 30px);
+    width: 800px;
 }
 
-.arrival .content img{
+#new-arrival .container .arrival .content img{
     background: #edf2fb;
-    width: 100%;
     object-fit: cover;
 }
 
@@ -280,14 +287,22 @@ a:link, a:visited {
 }
 
 #favorite .container .card-item{
+    overflow: auto;
+    scroll-direction: horizontal;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;   
+    white-space: nowrap;
+    overflow-y: auto;
+    overflow-x: auto; 
+}
+
+#favorite .container .card-item::-webkit-scrollbar {
+    display: none;
 }
 
 #favorite .container .card-item .content{
-    width: calc((100%/2) - 20px);
+    height: 400px;
     margin: 0px 10px;
+    width: 900px;
 }
 
 #favorite .container .card-item .content img{
@@ -361,4 +376,58 @@ a:link, a:visited {
     height: 40px;
     width: 120px;
     object-fit: cover;
+}
+
+/* Section Join */
+
+#join{
+    padding: 91px 0px;
+    background: orange;
+    color: white;
+    text-align: center;
+}
+
+#join h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin:0px;
+    line-height: 3rem;
+}
+
+#join hp{
+    font-size: 30px;
+    margin:0px;
+}
+
+#join input{
+    padding : 15px;
+    padding-right: 130px;
+    border: 0;
+    border-radius: 5px
+}
+
+#join button{
+    margin-left: -91px;
+    background: black;
+    color:white;
+    padding: 8px 15px;
+    border-radius: 5px
+}
+
+footer{
+    padding: 50px 0px;
+    background: black;
+    color: white;
+}
+
+footer .container{
+    padding: 0px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer h5{
+    font-size: 20px;
+    font-weight: medium;
 }

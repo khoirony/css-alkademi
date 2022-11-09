@@ -64,7 +64,7 @@
     <section id="new-arrival">
         <div class="container">
             <p>2021 NEW ARRIVALS</p>
-            <div class="arrival">
+            <div class="arrival" id="scroll">
                 <div class="content">
                     <img src="men.png" alt="">
                     <p>Hoodie & Sweetshirt</p>
@@ -78,6 +78,11 @@
                 <div class="content">
                     <img src="men.png" alt="">
                     <p>Tees & T-Shirt</p>
+                    <span>Buy Now!</span>
+                </div>
+                <div class="content">
+                    <img src="men.png" alt="">
+                    <p>Hoodie & Sweetshirt</p>
                     <span>Buy Now!</span>
                 </div>
             </div>
@@ -142,7 +147,7 @@
     <section id="favorite">
         <div class="container">
             <h1>Youngs Favorite Apparel</h1>
-            <div class="card-item">
+            <div class="card-item" id="scroll">
                 <div class="content">
                     <img src="men.png" alt="">
                     <div class="bottom">
@@ -200,6 +205,65 @@
             </div>
         </div>
     </section>
+
+    <section id="join">
+        <div class="container">
+            <h1>JOIN RONDOVISION COMMUNITY</h1>
+            <h1>TO GET MONTHLY PROMO</h1>
+            <p>Type your email down bellow and be your wild generation</p>
+            <form action="">
+                <input type="text" class="poppins" placeholder="Add your text here">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="item">
+                <h1>RONDOVISION</h1>
+                <p>128 Market St.</p>
+                <p>20193 San Fransisco</p>
+                <p>California Suite #201</p>
+            </div>
+            <div class="item">
+                <h5>Company</h5>
+                <p>About</p>
+                <p>Contact Us</p>
+                <p>Support</p>
+                <p>Careers</p>
+            </div>
+            <div class="item">
+                <h5>Quic link</h5>
+                <p>Share Location</p>
+                <p>Orders Tracking</p>
+                <p>Size Guide</p>
+                <p>FAQ</p>
+            </div>
+            <div class="item">
+                <h5>Legal</h5>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const container = document.getElementById("scroll");
+        // where "container" is the id of the container
+        container.addEventListener("wheel", function (e) {
+            if (e.deltaY > 0) {
+                container.scrollLeft += 100;
+                e.preventDefault();
+                // prevenDefault() will help avoid worrisome 
+                // inclusion of vertical scroll 
+            } else {
+                container.scrollLeft -= 100;
+                e.preventDefault();
+            }
+        });
+    </script>
 </body>
 
 </html>
