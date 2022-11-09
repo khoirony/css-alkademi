@@ -1,0 +1,364 @@
+body{
+    margin: 0;
+    background: #edf2fb;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Start */
+
+#navbar{
+    position: fixed;
+    background: #edf2fb;
+    width: 100%;
+    z-index: 40;
+}
+
+.navbar{
+    width: 1024;
+    height: auto;
+    padding: 15px 0px
+}
+.header{
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header ul{
+    display: flex;
+}
+
+.header li{
+    list-style: none;
+    margin: 6px 5px;
+}
+
+.active a:link, a:visited {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px
+}
+
+a:link, a:visited {
+    color: black;
+    margin: 0px 10px; 
+    text-decoration: none;
+}
+
+/* Navbar End */
+
+.container{
+    width: 1024;
+    margin: 0 auto;
+}
+
+/* Landing Page */
+#landing-page{
+    padding-top: 80px;
+}
+
+.landing{
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+
+.button-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-flex .isi img{
+    margin-top: 30px;
+    height: 60px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.landing p{
+    font-weight: 900;
+    font-size: 80px;
+    line-height:10px;
+    margin: 35px 15px ;
+}
+
+.landing .content span{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.profile{
+    width: 700px;
+    object-fit: cover;
+    filter: drop-shadow(19px 0px 0px white) drop-shadow(19px 0px 0px orange) drop-shadow(19px 0px 0px blue) drop-shadow(19px 0px 0px yellow);
+}
+
+.landing .box-orange{
+    margin: 0px;
+    background: orange;
+    padding: 1px 1px;
+    transform: rotate(-2deg);
+}
+
+.landing .text-orange{
+    transform: rotate(2deg);
+}
+
+.landing .bg-white{
+    margin: 0px;
+    margin-top: 60px;
+    background: white;
+    padding: 35px 20px;
+    transform: rotate(-1deg);
+}
+
+/* New Arrival */
+
+#new-arrival{
+    padding: 100px;
+    background: white;
+}
+
+#new-arrival .container p{
+    margin-left: 15px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.arrival{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.arrival .content{
+    padding: 0px;
+    margin: 0px 15px;
+    width: calc((100%/3) - 30px);
+}
+
+.arrival .content img{
+    background: #edf2fb;
+    width: 100%;
+    object-fit: cover;
+}
+
+#new-arrival .container .arrival .content p{
+    margin: 0px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Sale */
+.container .sale{
+    display: flex;
+    flex-wrap: wrap;
+    background: orange;
+    padding: 0px 10%;
+}
+.container .sale .content{
+    padding-left: 100px;
+}
+
+.container .sale .content img{
+    margin-top:50px;
+    width: 100%;
+    filter: drop-shadow(-19px 0px 0px white) drop-shadow(-19px 0px 0px orange) drop-shadow(-19px 0px 0px blue) drop-shadow(-19px 0px 0px yellow);
+}
+
+.container .sale .text{
+    padding: 50px;
+    margin: 0px 15px ;
+}
+
+.container .sale .content .bg-white{
+    margin: 0px;
+    margin-top: 60px;
+    background: white;
+    padding: 0px 10px;
+    transform: rotate(-1deg);
+}
+.container .sale .content p{
+    margin: 0;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.sale .content button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: black;
+    color: white;
+    border-radius: 5px
+}
+
+/* Section Brand */
+
+#brand {
+    padding: 100px 0px;
+    background: white;
+}
+
+#brand .container{
+    display: flex;
+    flex-wrap: unwrap;
+    padding: 0px 120px;
+}
+
+#brand .container .left{
+    width: 45%;
+    padding-top: 90px;
+}
+
+#brand .container .left h3{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+#brand .container .left p{
+    font-size: 20px;
+    margin: 0px;
+}
+
+#brand .container .left button{
+    background: black;
+    color: white;
+    font-size: 20px;
+    padding: 15px 60px;
+    border-radius: 10px;
+
+}
+
+#brand .container .right{
+    width: 55%;
+}
+
+#brand .container .right .card-brand{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#brand .container .right .card-brand .items{
+    background: cyan;
+    text-align: center;
+    width: calc((100%/3) - 40px);
+    height: 200px;
+    margin: 20px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* Section Favorite */
+#favorite{
+    padding: 50px 0px;
+    background: white;
+}
+
+#favorite .container{
+    padding: 0px 120px;
+}
+
+#favorite .container h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#favorite .container .card-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+#favorite .container .card-item .content{
+    width: calc((100%/2) - 20px);
+    margin: 0px 10px;
+}
+
+#favorite .container .card-item .content img{
+    background: cyan;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#favorite .container .card-item .content .bottom{
+    display: flex;
+    flex-wrap: unwrap;
+    justify-content: space-between;
+}
+
+#favorite .container .card-item .content .bottom .right{
+    padding-top: 30px;
+}
+
+#favorite .container .card-item .content .bottom .left h3{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+#favorite .container .card-item .content .bottom .left p{
+    line-height: 0px;
+}
+
+#download{
+    padding: 50px 0px;
+    background: white;
+}
+
+#download .container{
+    padding: 0px 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#download .container .content{
+    width: 50%;
+}
+
+#download .container .text{
+    padding-top: 130px;
+}
+
+#download .container .content h3{
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+#download .container .content p{
+    margin: 0px;
+}
+
+#download .container .content img{
+    display: block;
+    margin-left: auto;
+}
+
+#download .container .content .button-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#download .container .content .button-flex .isi img{
+    margin-top: 30px;
+    height: 40px;
+    width: 120px;
+    object-fit: cover;
+}
